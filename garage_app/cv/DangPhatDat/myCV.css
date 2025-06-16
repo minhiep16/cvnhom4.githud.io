@@ -1,0 +1,233 @@
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+p{
+    line-height: 30px;
+    font-size: larger;
+    font-weight: 300;
+}
+.container {
+    background-color: rgba(225, 239, 255, 0.455);
+}
+.header {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
+}
+.header__logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0px 30px;
+}
+/* ảnh logo */
+#logo{ 
+    border-radius: 50%;
+    border: 2px solid rgba(122, 142, 143, 0.96);
+    width: 80px;
+    height: 80px;
+    
+}
+.banner{
+    margin: 10px 0px;
+    border: 2px solid gray;
+    border-right: none ;
+    border-left: none;
+    background-image: url(./img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 1/3;
+    text-align: center;
+    color: rgb(70, 87, 113);
+}
+
+
+.header__nav-list{
+    align-self: center;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.header__nav-item{
+    background: rgb(210, 220, 255);   
+    padding: 10px 20px;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size:  16px;
+    box-shadow: -4px 4px 0px rgba(67, 55, 196, 0.305);
+}
+.header__nav-item {
+    color: rgb(85, 107, 140); 
+}
+.header__nav-item:hover {
+    background: rgb(215, 232, 252);
+    transform: translateY(-4px); /* dich len tren 4px khi tro chuot toi*/
+  }
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+.main-content__block {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 0px 50px;
+    background-color: rgba(216, 232, 255, 0.3);
+    border-radius: 20px;
+    margin: 20px;
+}
+.main-content__block h2{
+    border-bottom: 2px solid gray ;
+    color: rgb(73, 92, 119);
+    font-weight: bolder;
+    font-size: xx-large;
+}
+#about {
+    grid-template-columns: 3fr 2fr ;
+}
+#about__content{
+    padding: 40px 100px 40px 50px
+}
+#about__content h2 {
+    margin-right: 400px;
+    padding-bottom: 10px;
+    
+}
+#about__img img {
+    border-radius: 30px;
+    width: auto;
+    height: 300px;
+    border: 3px solid rgb(85, 107, 140);
+    
+}
+#about__img{    
+    background-color: rgb(67 56 202 / 0.2); /* set backgroud-color de dung box-shadow dep*/
+    border-radius: 30px;
+    box-shadow: -6px 4px 0px  rgba(68, 56, 202, 0.316);
+}
+#professional-goals h2{
+    padding: 10px 50px;
+}
+#hobbies{
+    display: flex;
+    flex-direction: column;
+}
+#hobbies h2{    
+    align-self: end;
+    padding-left: 100px;
+    padding-bottom: 10px;
+    margin-right: 100px;
+}
+#hobbies img{
+    border-radius: 30px;
+}
+#badminton{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+#badminton h3{
+    flex: 1fr;
+    font-size: xx-large;
+    color: rgb(70, 87, 113);
+}
+#badminton img{
+    flex: 1fr;
+    width: auto;
+    height: 200px;
+}
+#volleyball{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+#volleyball h3{
+    flex: 1fr;
+    font-size: xx-large;
+    color: rgb(70, 87, 113);
+}
+#volleyball img{
+    flex: 1fr;
+    width: auto;
+    height: 200px;
+}
+
+
+#video-game img{
+    border-radius: 40px;
+    width: auto;
+    height: 200px;
+    margin: 20px 10px;
+    box-shadow: -6px 6px 0px  rgba(68, 56, 202, 0.316);
+}
+#video-game{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+#video-game h3{
+    flex: 1fr;
+    font-size: xx-large;
+    color: rgb(70, 87, 113);
+    padding: 0px 50px;
+}
+#skills {
+    
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    text-align: center;
+}
+#skills h2{
+    padding: 10px 50px;
+    align-self: center;
+}
+
+#skills h3 {
+    font-size: x-large;
+    color: rgb(73, 92, 119);
+    margin-bottom: 10px;
+}
+
+.program-language-list,
+.tools-list,
+.office-app-list,
+.personal-skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+    gap: 10px;
+    padding: 0px 50px;
+    margin: 0;
+    width: 100%;
+}
+
+.program-language-item,
+.tools-item,
+.office-app-item,
+.personal-skill-item {
+    background-color: rgb(210, 220, 255);
+    padding: 10px 16px;
+    border-radius: 15px;
+    box-shadow: -3px 3px 0px rgba(67, 55, 196, 0.2);
+    font-weight: bold;
+    color: rgb(70, 87, 113);
+}
+
+.program-language-item:hover,
+.tools-item:hover,
+.office-app-item:hover,
+.personal-skill-item:hover {
+    background-color: rgb(215, 232, 252);
+    transform: translateY(-3px);
+}

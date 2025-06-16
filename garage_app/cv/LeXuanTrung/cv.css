@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+:root {
+  --mauchinh: #161617;
+  --mauphu: #a7abab;
+  --background: #ffffff;
+  --backgroundthe: #f5f4f4;
+}
+/* Banner */
+.Banner{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.Banner img {
+    width: 100%;
+    object-fit: cover;
+    top: -200px;
+    
+}
+/* Header */
+.Tren {
+    background: var(--backgroundthe); /* Chỉnh màu cho background*/
+    margin-top: -50px;
+    padding: 20px;
+    border-radius: 10px; /* Độ cong của khung*/
+    max-width: 1500px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Bóng của khung*/
+    position: relative;
+}
+.Tren img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Gioithieu h1 {
+    font-size: 30px;
+    color: var(--mauchinh);
+    font-weight: 700;
+}
+.Gioithieu h2 {
+    font-size: 20px;
+    color: var(--mauchinh);
+    margin-top: 4px;
+}
+.Lienhe {
+    margin-left: 400px;
+}
+.Lienhe a{
+    text-decoration: none;
+}
+.Lienhe i {
+    font-size: 30px;
+    margin-right: 10px;
+    color: var(--mauchinh);
+    transition: color 0.3s; /* Hiệu ứng*/
+    cursor: pointer; 
+}
+.Lienhe i:hover { /* Khi trỏ chuột vào sẽ có hiệu ứng*/
+    color: var(--mauphu);
+    font-size: 2em;
+}
+nav{
+    text-align: end;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+    margin-left: 280px;
+}
+nav ul li a { /*Chỉnh kích thước, màu ,in đậm, hiệu ứng*/
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--mauchinh);
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+nav ul li a:hover {
+    color: var(--mauphu);
+    transform: translateY(-5px);
+}
+/* Content */
+.Giua {
+    background-color: var(--background);
+    padding: 50px 20px;
+}
+.Noidungtrai {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.Noidung{
+    background: var(--backgroundthe);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.Noidung i{
+    font-size: 50px;
+    color: var(--mauchinh);
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.Noidung span{
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 30px;
+    color: var(--mauchinh);
+}
+.Noidung p{
+    font-size: 20px;
+}
+.Thongtin {
+    background: var(--backgroundthe);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.Thongtin i {
+    font-size: 50px;
+    color: var(--mauchinh);
+    align-items: center;
+    margin-bottom: 10px;
+}
+.Thongtin span {
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 30px;
+    color: var(--mauchinh);
+}
+.Ngonngu, .Diemkynang {
+    margin-top: 10px;
+}
+
+.Khungdiem {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.c{ /* Tạo khung điểm %*/
+    background-color: var(--mauchinh);
+    color: rgb(219, 216, 216);
+    font-weight: bold;
+    padding: 5px 10px;
+    width: 90%;
+}
+.python {
+    background-color: var(--mauchinh);
+    color: rgb(219, 216, 216);
+    font-weight: bold;
+    padding: 5px 10px;
+    width: 80%;
+}
+.javascript {
+    background-color: var(--mauchinh);
+    color: rgb(219, 216, 216);
+    font-weight: bold;
+    padding: 5px 10px;
+    width: 90%;
+}
+.lamviecnhom{
+    background-color: var(--mauchinh);
+    color: rgb(219, 216, 216);
+    font-weight: bold;
+    padding: 5px 10px;
+    width: 90%;
+}
+.ngoaingu{
+    background-color: var(--mauchinh);
+    color: rgb(219, 216, 216);
+    font-weight: bold;
+    padding: 5px 10px;
+    width: 10%;
+}
+.Chuyenmon{
+    background-color: var(--mauchinh);
+    color: rgb(219, 216, 216);
+    font-weight: bold;
+    padding: 5px 10px;
+    width: 80%;
+}
+.giaotiep{
+    background-color: var(--mauchinh);
+    color: rgb(219, 216, 216);
+    font-weight: bold;
+    padding: 5px 10px;
+    width:90%;
+}
+.Noidung img{
+    width: 20%;
+    border-radius: 10px;
+}
+.sothich{
+    display: flex;
+    gap: 50px;
+}
+.Diemkynang {
+    display: block;
+    gap: 10px;
+}
+p{
+    font-size: 20px;
+}
+
+/* Khi <a> được click */
+.activelink {
+  position: fixed;
+  top: 10%;
+  left: 25%;
+  width: 50vw;
+  height: 50px;
+  background: rgb(195, 195, 188);
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 50px;
+  z-index: 999;
+  border-radius: 10px;
+}
+
+/* Khi nội dung được kích hoạt */
+.activecontent {
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  width: 50vw;
+  height: 50vh;
+  background: rgb(195, 195, 188);
+  font-size: 1.3em;
+  z-index: 998;
+  overflow: auto;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+@keyframes hienTuTrai {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.Noidung ,.Thongtin{
+    animation: hienTuTrai 0.8s ease forwards;
+    animation-delay: 0.3s;
+}

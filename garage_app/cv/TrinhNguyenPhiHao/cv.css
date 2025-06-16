@@ -1,0 +1,413 @@
+/* === RESET & CƠ BẢN === */
+/* Reset margin, padding cho tất cả phần tử, dùng font chung */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI',  Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Thiết lập nền và màu chữ chính cho trang */
+body {
+  background-color: #84b0f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === BANNER === */
+/* Phần banner đầu trang, căn giữa, hiệu ứng gradient */
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background: linear-gradient(-45deg, #3b82f6, #20cfed, #a35fe3, #ea74af);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  color: white;
+}
+
+/* Hoạt ảnh nền chuyển màu mượt */
+@keyframes gradientBG {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Vòng tròn gradient bao quanh ảnh */
+.hinhanh {
+  padding: 5px;
+  border-radius: 50%;
+  background: linear-gradient(-45deg, #e14292, #8c41d3, #05c5e6, #3176e4);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  display: inline-block;
+}
+
+/* Ảnh đại diện cá nhân */
+.banner img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards 0.3s; /* Hiệu ứng mờ dần */
+  transition: transform 0.3s ease-in-out;
+  display: block;
+}
+
+/* Phóng to ảnh khi hover */
+.banner img:hover {
+  transform: scale(1.2);
+}
+
+/* Thông tin tên */
+.ten {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards 0.6s;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Phóng nhẹ tên khi hover */
+.ten:hover {
+  transform: scale(1.08);
+}
+
+.ten h2 { font-size: 28px; color: white; }
+.ten p { font-size: 16px; color: #e4e4e4; }
+
+/* === ICON MẠNG XÃ HỘI === */
+.icon-banner {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Icon mạng xã hội */
+.icon-banner a {
+  background-color: black;
+  color: white;
+  font-size: 23px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover cho icon */
+.icon-banner a:hover {
+  transform: scale(1.15);
+  background-color: #333;
+}
+
+/* === THANH ĐIỀU HƯỚNG NAVBAR === */
+.navbar {
+  background-color: #3b82f6;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Danh sách menu */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Hiệu ứng chữ khi hover */
+.navbar ul li,
+.navbar a {
+  transition: transform 0.3s ease;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar ul li:hover,
+.navbar a:hover {
+  transform: scale(1.2);
+  text-decoration: none;
+  color: #44d4ea;
+}
+
+/* === PHẦN CHUNG CÁC MỤC NỘI DUNG (SECTION) === */
+.section {
+  padding: 20px 30px;
+  background: white;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  scroll-margin-top: 80px;
+
+  /* Hoạt ảnh mờ dần + trượt lên */
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Zoom nhẹ khi hover section */
+.section:hover {
+  transform: scale(1.05);
+}
+
+/* CẢI THIỆN: delay hiệu ứng cho từng section */
+#thongtin { animation-delay: 0.2s; }
+#nghenghiep { animation-delay: 0.4s; }
+#sothich { animation-delay: 0.6s; }
+#chungchigiaithuong { animation-delay: 0.8s; }
+#kynang { animation-delay: 1s; }
+#duan { animation-delay: 1.2s; }
+
+/* === HEADER CỦA SECTION === */
+.section-header {
+  display: flex;
+  align-items: center;
+  background: #e5e5e5;
+  padding: 8px 12px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  gap: 10px;
+  width: fit-content;
+}
+
+/* Icon đầu mục */
+.icon-tieude {
+  width: 40px;
+  height: 40px;
+  background-color: #51aee7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+}
+
+/* Tiêu đề đầu mục */
+.tieude {
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* Hiệu ứng hover cho tiêu đề */
+.section-header:hover .icon-tieude,
+.section-header:hover .tieude {
+  transform: scale(1.1);
+  transition: transform 0.6s;
+}
+
+/* === THANH KỸ NĂNG === */
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill span {
+  font-weight: bold;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+/* Thanh thể hiện mức độ kỹ năng */
+.skill-level {
+  height: 100%;
+  background-color: #3b82f6;
+  transition: width 1s ease-in-out;
+}
+
+/* Cấp độ kỹ năng cụ thể */
+.level-75 { width: 75%; }
+.level-65 { width: 65%; }
+.level-40 { width: 40%; }
+.level-85 { width: 85%; }
+
+/* === DANH SÁCH LIỆT KÊ === */
+.section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.section ul li i {
+  font-size: 18px;
+}
+
+/* === ICON ĐẶC TRƯNG TỪNG DÒNG === */
+.icon-sport { color: #10b981; }
+.icon-music { color: #ef4444; }
+.icon-design { color: #f59e0b; }
+.icon-name { color: #6366f1; }
+.icon-birth { color: #f43f5e; }
+.icon-address { color: #10b981; }
+.icon-uni { color: #3b82f6; }
+.icon-dev { color: #f97316; }
+.icon-student { color: #3b82f6; }
+.icon-landing { color: #10b981; }
+.icon-blog { color: #f59e0b; }
+.icon-cv { color: #8b5cf6; }
+
+/* === CHÂN TRANG (FOOTER) === */
+footer {
+  background-color: #3558b7;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Icon mạng xã hội trong footer */
+.icon-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.icon-footer a {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* === HOẠT ẢNH === */
+/* Mờ dần từ 0 đến 1 */
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Trượt lên và mờ dần */
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === RESPONSIVE: giao diện mobile === */
+@media (max-width: 768px) {
+  .banner, .navbar ul {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+/* CẢI THIỆN: chỉnh giao diện màn hình nhỏ */
+@media (max-width: 480px) {
+  .section {
+    padding: 15px 20px;
+  }
+
+  .intro h2 {
+    font-size: 22px;
+  }
+
+  .intro p {
+    font-size: 14px;
+  }
+
+  .navbar ul {
+    gap: 10px;
+  }
+
+  .icon-banner a {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+/* Cuộn mượt khi nhấp liên kết */
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu nằm giữa */
+.navbar-menu {
+  flex: 1;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+  color: #44d4ea;
+  transform: scale(1.15);
+}
+
+/* Spacer bên trái để cân giữa */
+.navbar-spacer {
+  width: 45px; /* cùng kích thước avatar để cân đều 2 bên */
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-spacer {
+    display: none;
+  }
+}

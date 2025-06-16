@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Liên kết đến tệp CSS riêng -->
+  <link rel="stylesheet" href="cv.css" />
+  <!-- Thư viện Font Awesome để dùng icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>CV - Trịnh Nguyễn Phi Hào</title>
+</head>
+<body>
+<!-- Phần banner đầu trang gồm ảnh đại diện, tên và các mạng xã hội -->
+<section class="banner" id="banner">
+  <!-- Hình ảnh đại diện -->
+  <div class="hinhanh">
+    <img src="img/ảnh.jpg" alt="Ảnh đại diện" />
+  </div>
+
+  <!-- Tên và mô tả ngắn gọn -->
+  <div class="ten">
+    <h2>Trịnh Nguyễn Phi Hào</h2>
+    <p><b>Sinh viên ngành Công Nghệ Thông Tin</b></p>
+  </div>
+
+  <!-- Icon liên kết đến các mạng xã hội -->
+  <div class="icon-banner">
+    <a href="https://www.facebook.com/phihaokc2005?locale=vi_VN" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.tiktok.com/@trinhnguyenphihao" target="_blank"><i class="fab fa-tiktok"></i></a>
+  </div>
+</section>
+
+<!-- Thanh điều hướng (navbar) để truy cập các phần khác của CV -->
+<nav class="navbar">
+  <div class="navbar-spacer"></div> <!-- Để cân giữa menu -->
+  <ul class="navbar-menu">
+    <li><a href="#banner"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="#thongtin">Thông tin</a></li>
+    <li><a href="#nghenghiep">Nghề nghiệp</a></li>
+    <li><a href="#sothich">Sở thích</a></li>
+    <li><a href="#chungchigiaithuong">Chứng chỉ - Giải thưởng</a></li>
+    <li><a href="#kynang">Kỹ năng</a></li>
+    <li><a href="#duan">Dự án</a></li>
+    <li><a href="#lienhe">Liên hệ</a></li>
+  </ul>
+</nav>
+
+<!-- Phần thông tin cá nhân -->
+<section class="section" id="thongtin">
+  <div class="section-header">
+    <div class="icon-tieude"><i class="fas fa-user"></i></div>
+    <span class="tieude">THÔNG TIN</span>
+  </div>
+  <ul>
+    <li><i class="fas fa-id-card icon-name"></i> Họ và Tên: Trịnh Nguyễn Phi Hào</li>
+    <li><i class="fas fa-birthday-cake icon-birth"></i> Ngày sinh: 03/10/2005</li>
+    <li><i class="fas fa-map-marker-alt icon-address"></i>Địa chỉ: Tp. HCM</li>
+  </ul>
+</section>
+
+<!-- Phần nghề nghiệp hiện tại và định hướng tương lai -->
+<section class="section" id="nghenghiep">
+  <div class="section-header">
+    <div class="icon-tieude"><i class="fas fa-briefcase"></i></div>
+    <span class="tieude">NGHỀ NGHIỆP</span>
+  </div>
+  <ul>
+    <li><i class="fas fa-user-graduate icon-uni"></i> Sinh viên năm 2 trường Đại học Giao Thông Vận Tải TP.HCM</li>
+    <li><i class="fas fa-laptop-code icon-dev"></i> Hướng đến phát triển Front-end</li>
+  </ul>
+</section>
+
+<!-- Phần liệt kê các sở thích cá nhân -->
+<section class="section" id="sothich">
+  <div class="section-header">
+    <div class="icon-tieude"><i class="fas fa-gamepad"></i></div>
+    <span class="tieude">SỞ THÍCH</span>
+  </div>
+  <ul>
+    <li><i class="fas fa-futbol icon-sport"></i> Chơi thể thao</li>
+    <li><i class="fas fa-music icon-music"></i> Nghe nhạc</li>
+    <li><i class="fas fa-pencil-ruler icon-design"></i>Đi bar</li>
+  </ul>
+</section>
+
+<!-- Phần liệt kê các chứng chỉ hoặc giải thưởng đã đạt được -->
+<section class="section" id="chungchigiaithuong">
+  <div class="section-header">
+    <div class="icon-tieude"><i class="fas fa-graduation-cap"></i></div>
+    <span class="tieude">Chứng chỉ - giải thưởng</span>
+  </div>
+  <ul>
+    <li><i class="fas fa-times" style="color: red;"></i> Không có</li>
+  </ul>
+</section>
+
+<!-- Phần kỹ năng cá nhân với thanh tiến trình thể hiện mức độ thành thạo -->
+<section class="section" id="kynang">
+  <div class="section-header">
+    <div class="icon-tieude"><i class="fas fa-wrench"></i></div>
+    <span class="tieude">KỸ NĂNG</span>
+  </div>
+
+  <!-- Kỹ năng HTML / CSS -->
+  <div class="skill">
+    <span>HTML / CSS</span>
+    <div class="skill-bar"><div class="skill-level level-75"></div></div>
+  </div>
+
+  <!-- Kỹ năng JavaScript -->
+  <div class="skill">
+    <span>JavaScript</span>
+    <div class="skill-bar"><div class="skill-level level-65"></div></div>
+  </div>
+
+  <!-- Kỹ năng thiết kế với Figma -->
+  <div class="skill">
+    <span>Thiết kế Figma</span>
+    <div class="skill-bar"><div class="skill-level level-40"></div></div>
+  </div>
+
+  <!-- Kỹ năng làm việc nhóm -->
+  <div class="skill">
+    <span>Làm việc nhóm</span>
+    <div class="skill-bar"><div class="skill-level level-85"></div></div>
+  </div>
+</section>
+
+<!-- Phần các dự án cá nhân đã thực hiện -->
+<section class="section" id="duan">
+  <div class="section-header">
+    <div class="icon-tieude"><i class="fas fa-bolt"></i></div>
+    <span class="tieude">DỰ ÁN</span>
+  </div>
+  <ul>
+    <li><i class="fas fa-users icon-student"></i> Thiết kế Website Nha Khoa - HTML/CSS/JS</li>
+    <li><i class="fas fa-globe icon-landing"></i> Thiết kế Website Garage sửa xe oto - HTML/CSS/JS</li>
+  </ul>
+</section>
+
+<!-- Phần liên hệ ở cuối trang -->
+<footer id="lienhe">
+  <!-- Thông tin liên hệ -->
+  <p>📞 0388671314 | 0337024131</p>
+  <p>✉️ phihaokc2005@gmail.com</p>
+  <p>📍 Bình Tân, TP. Hồ Chí Minh</p>
+
+  <!-- Icon mạng xã hội lặp lại để dễ truy cập -->
+  <div class="icon-footer">
+    <a href="https://www.facebook.com/phihaokc2005?locale=vi_VN" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.tiktok.com/@trinhnguyenphihao" target="_blank"><i class="fab fa-tiktok"></i></a>
+  </div>
+</footer>
+</body>
+</html>
