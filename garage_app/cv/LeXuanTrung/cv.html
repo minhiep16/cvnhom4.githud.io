@@ -8,104 +8,170 @@
     <title>CV Lê Xuân Trung</title>
 </head>
 <body>
-    <div class="Banner">
-        <img src="../LeXuanTrung/Banner.jpg" alt="">
-    </div>
-    <section class="Tren">
-        <img src="../LeXuanTrung/anhdaidien.jpg" alt="">
-        <div class="Gioithieu">
-            <h1>LÊ XUÂN TRUNG</h1>
-            <h2>LẬP TRÌNH VIÊN</h2>
-        </div>
-        <nav>
-            <div class="Lienhe">
-                <a href="https://www.facebook.com/le.xuan.trung.116164"><i class="ri-facebook-fill"></i></a> 
+        <div class="Banner">
+            <div class="Profile">
+                <img src="../LeXuanTrung/anhdaidien.jpg" alt="">
+                <h1 contenteditable="true">Lê Xuân Trung</h1>
+                <h2 contenteditable="true">Lập Trình Viên</h2>
+            <div class="Contact">
+                <a href="https://www.facebook.com/le.xuan.trung.116164"><i class="ri-facebook-fill"></i></a>
                 <a href="https://github.com/lexuantrung98"><i class="ri-github-line"></i></a>
                 <a href="https://www.instagram.com/minhlatrungg/"><i class="ri-instagram-line"></i></a>
+                <button class="editbtn" onclick="focusBannerEdit()">
+                    ✏️
+                </button>
             </div>
-            <ul>
-                <li><a href="" id="nghenghiep">Nghề Nghiệp</a></li>
-                <li><a href="" id="sothich">Sở Thích</a></li>
-                <li><a href="" id="ngonngu">Ngôn Ngữ</a></li>
-                <li><a href="" id="kynang">Kỹ Năng</a></li>
-                <li><a href="" id="chungchi">Chứng Chỉ</a></li>
-                <li><a href="" id="duan">Dự Án</a></li>
-            </ul>
-        </nav>
-    </section>
-    <section class="Giua">
-        <div class="Noidungtrai">
-            <div class="Thongtin">
-                <i class="ri-user-fill"></i><span>Thông tin</span>
-                <p> Tên: Lê Xuân Trung <br>
-                    Tuổi: 21 tuổi <br>
-                    Địa chỉ: Tân Chánh Hiệp, Quận 12, TP Hồ Chí Minh
-                </p>
             </div>
-            <div id="ndnghenghiep" class="Noidung">
-                <i class="ri-info-card-line"><span>Nghề Nghiệp</span></i>
-                <p>Sinh Viên năm 2, chuyên ngành Công Nghệ Thông Tin Của Trường Đại Học Giao Thông Vận Tải TP Hồ Chí Minh</p>
-            </div>
-            <div class="Noidung">
-                <i class="ri-suitcase-line"><span>Học Vấn</span></i>
-                <p>2023-Nay</p>
-                   <p>> Đại Học Giao Thông Vận Tải TP Hồ Chí Minh </p>
-            </div>
-            <div id="ndngonngu" class="Noidung">
-                <i class="ri-code-box-line"><span>Ngôn Ngữ</span></i>
-                <div class="Ngonngu">
-                    <p>C/C++</p>
-                    <div class="Khungdiem">
-                        <div class="c">90%</div>
-                    </div>
-                    <p>Python</p>
-                    <div class="Khungdiem">
-                        <div class="python">80%</div>
-                    </div>
-                    <p>Javascript</p>
-                    <div class="Khungdiem">
-                        <div class="javascript">90%</div>
-                    </div>
-                </div>
-            </div>
-            <div id="ndsothich" class="Noidung">
-                <i class="ri-road-map-line"><span>Sở Thích</span></i>
-                <div class="sothich">
-                    <p>> Đi du lịch mọi nơi <br>
-                    > Gặp gỡ bạn bè <br>
-                    > Xe cộ</p>
-                </div>
-            </div>
-            <div id="ndchungchi" class="Noidung">
-                <i class="ri-award-fill"><span>Chứng Chỉ</span></i>
-                <p>Không có</p>
-            </div>
-            <div id="ndduan" class="Noidung">
-                <i class="ri-window-line"><span>Dự Án</span></i>
-                <p>Hoàn thành web Nha Khoa</p>
-            </div>
-            <div id="ndkynang" class="Noidung">
-                <i class="ri-pencil-line"><span class="kynang">Kỹ Năng</span></i>
-                    <p>Làm việc nhóm</p>
-                    <div class="Khungdiem">
-                        <div class="lamviecnhom">90%</div>
-                    </div>
-                    <p>Ngoại Ngữ</p>
-                    <div class="Khungdiem">
-                        <div class="ngoaingu">10%</div>
-                    </div>
-                    <p>Chuyên môn</p>
-                    <div class="Khungdiem">
-                        <div class="Chuyenmon">80%</div>
-                    </div>
-                    <p>Giao tiếp</p>
-                    <div class="Khungdiem">
-                        <div class="giaotiep">90%</div>
-                    </div>
+            <div class="Particles"></div>
+        </div>
+        <div class="Header">
+            <nav>
+                <ul class="navmenu">
+                    <h1>Lê Xuân Trung</h1>
+                    <li><a href="#info" id="thongtin">Thông Tin</a></li>
+                    <li><a href="#tar" id="nghenghiep">Mục Tiêu</a></li>
+                    <li><a href="#int" id="sothich">Sở Thích</a></li>
+                    <li><a href="#cer" id="chungchi">Chứng Chỉ</a></li>
+                    <li><a href="#lan" id="kynang">Kỹ Năng</a></li>
+                    <li><a href="#pro" id="duan">Dự Án</a></li>
+                </ul>
+            </nav>
+            <div class="toggletheme">
+            <input type="checkbox" id="themeSwitch" />
+            <label for="themeSwitch" class="switch">
+                <span class="slider">
+                <span class="icon sun">☀️</span>
+                <span class="icon moon">🌙</span>
+                </span>
+            </label>
             </div>
         </div>
-    </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <div class="Between">
+        <h1 id="info">Thông Tin Cơ Bản</h1>
+        <div class="Information">
+            <div class="Information1">
+                <h2><i class="ri-info-i"></i> Thông Tin Cơ Bản</h2>
+                  <div class="item">
+                        <span class="label">Họ tên:</span>
+                        <span class="value">Lê Xuân Trung</span>
+                    </div>
+
+                    <div class="item">
+                        <span class="label">Tuổi:</span>
+                        <span class="value">21</span>
+                    </div>
+
+                    <div class="item">
+                        <span class="label">Địa chỉ:</span>
+                        <span class="value">Đồng Nai, Việt Nam</span>
+                    </div>
+
+                    <div class="item">
+                        <span class="label">SĐT:</span>
+                        <span class="value">0868780252</span>
+                    </div>
+                </div>
+            <div class="Information2">
+                <h2><i class="ri-user-line"></i> Giới Thiệu Bản Thân</h2>
+                <div class="infor">
+                    <p>Tôi là sinh viên năm 2 ngành Công Nghệ THông Tin của Đại Học GIao THông Vận Tải Hồ Chí Minh (UTH)</p>
+                </div>
+            </div>
+        </div>
+        <div class="Target" id="tar">
+            <h1>Mục Tiêu</h1>
+            <div class="Tar">
+                <i class="ri-building-line"></i>
+                <h2>Mục Tiêu Nghề Nghiệp</h2>
+                <p>Trở thành một Full Stack Developer chuyên nghiệp, có khả năng phát triển các ứng dụng web hiện đại và đáp ứng nhu cầu thực tế của doanh nghiệp.</p>
+                <h2>Mục Tiêu Lâu Dài</h2>
+                <p>Phát triển thành một kỹ sư phần mềm với khả năng thành thạo các ngôn ngữ lập trình khác nhau, quản lý các tổ chức và dự án lớn.</p>
+            </div>
+        </div>
+        <h1 id="int">Sở Thích</h1>
+        <div class="Interest">
+            <div class="Travel">
+                <img src="../LeXuanTrung/Travel.jpg" alt="">
+                <h2>Du lịch</h2>
+            </div>
+            <div class="Sport">
+                <img src="../LeXuanTrung/sport.png" alt="">
+                <h2>Thể Thao</h2>
+            </div>
+        </div>
+        <div class="Certificate" id="cer">
+            <h1>Chứng Chỉ</h1>
+            <div class="cardfullwidth">
+            <h2>🏆 Chứng chỉ - Giải thưởng</h2>
+            <div class="award">
+                <div class="awardicon">🏅</div>
+                <div class="awardinfo">
+                <h3>Chứng chỉ</h3>
+                <p>Không Có.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <h1 id="lan">Kỹ Năng & Ngôn Ngữ</h1>
+        <div class="Language">
+            <div class="card">
+            <h2>💻 Kỹ năng lập trình</h2>
+
+            <div class="skill">
+                <span class="name">JavaScript</span>
+                <div class="bar">
+                <div class="fill js"></div>
+                </div>
+                <span class="percent">80%</span>
+            </div>
+
+            <div class="skill">
+                <span class="name">C</span>
+                <div class="bar">
+                <div class="fill C"></div>
+                </div>
+                <span class="percent">20%</span>
+            </div>
+
+            <div class="skill">
+                <span class="name">Python</span>
+                <div class="bar">
+                <div class="fill python"></div>
+                </div>
+                <span class="percent">50%</span>
+            </div>
+            </div>
+
+            <!-- Ngôn ngữ -->
+            <div class="card">
+            <h2>🈯 Ngôn ngữ</h2>
+
+            <div class="skill">
+                <span class="name">Tiếng Việt</span>
+                <div class="bar">
+                <div class="fill viet"></div>
+                </div>
+                <span class="percent">90%</span>
+            </div>
+
+            <div class="skill">
+                <span class="name">Tiếng Anh</span>
+                <div class="bar">
+                <div class="fill eng"></div>
+                </div>
+                <span class="percent">20%</span>
+            </div>
+            </div>
+                </div>
+        <div class="Project" id="pro">
+            <h1>Dự Án</h1>
+            <div class="Pro">
+                <img src="../LeXuanTrung/Duan.webp" alt="">
+                <h2>Web Nha Khoa</h2>
+                <p>Web Phòng Khám Nha Khoa</p>
+            </div>
+        </div>
+    </div>
     <script src="../LeXuanTrung/cv.js"></script>
 </body>
 </html>
