@@ -1,159 +1,258 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <!-- Liên kết đến tệp CSS riêng -->
-  <link rel="stylesheet" href="cv.css" />
-  <!-- Thư viện Font Awesome để dùng icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <title>CV - Trịnh Nguyễn Phi Hào</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cv.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="cv.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>CV-Cá Nhân</title>
 </head>
 <body>
-<!-- Phần banner đầu trang gồm ảnh đại diện, tên và các mạng xã hội -->
-<section class="banner" id="banner">
-  <!-- Hình ảnh đại diện -->
-  <div class="hinhanh">
-    <img src="img/ảnh.jpg" alt="Ảnh đại diện" />
-  </div>
+   <button class="nutquaylai" onclick="history.back()">
+    <a href="http://127.0.0.1:5500/cvnhom4.githud.io/index.html"><i class="fa-solid fa-arrow-left"></i></a>
+  </button>
+        <!-- Banner -->
+     <header class="banner">
+        <div id="particles-js"></div>
+        <div class="overlay">
+            <div class="banner-inner">
+                <div class="banner-card" id="home">
+                    <img src="/cvnhom4.githud.io/garage_app/cv/TrinhNguyenPhiHao/img/ảnh.jpg" alt="Avatar" class="avatar" />
+                    <h1 class="typing-text" id="typed-name"></h1>
+                    <p class="typing-text desc" id="typed-desc"></p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/phihaokc2005" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://github.com/phihao11" class="github"><i class="fab fa-github"></i></a>
+                        <a href="https://www.tiktok.com/@trinhnguyenphihao" class="tiktok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/tnp_hao0310/" class="instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="info-boxes">
+                      <a href="tel:0388671314" class="info-box" id="phone-link" style="text-decoration: none;">
+                        <i class="fas fa-phone-alt" style="color: #e66aa0;"></i>
+                        <span id="phone-display">0388671314</span>
+                      </a>
+                        <div class="info-box">
+                            <i class="fas fa-birthday-cake" style="color: #dcb9ff;"></i>
+                            <span id="birthday-display">Ngày sinh: 3-10-2005</span>
+                        </div>
+                        <div class="info-box">
+                          <i class="fas fa-home" style="color: #f5b97a;"></i>
+                          <a id="address-display" href="https://byvn.net/TfBp" target="_blank" style="text-decoration: none; color: inherit;">246 Bình Thành,Bình Tân, TP.HCM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
 
-  <!-- Tên và mô tả ngắn gọn -->
-  <div class="ten">
-    <h2>Trịnh Nguyễn Phi Hào</h2>
-    <p><b>Sinh viên ngành Công Nghệ Thông Tin</b></p>
-  </div>
+<div class="section-background">
+    <!-- Navbar -->
+     <nav class="navbar">
+        <div class="nav-center">
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#career">Nghề nghiệp</a></li>
+                <li><a href="#hobbies">Sở thích</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#certificates">Chứng chỉ</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+                <li class="edit-cv-item">
+                    <a href="javascript:void(0);" id="editCVBtn">Chỉnh sửa CV</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-  <!-- Icon liên kết đến các mạng xã hội -->
-  <div class="icon-banner">
-    <a href="https://www.facebook.com/phihaokc2005?locale=vi_VN" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.tiktok.com/@trinhnguyenphihao" target="_blank"><i class="fab fa-tiktok"></i></a>
-  </div>
-</section>
-
-<!-- Thanh điều hướng (navbar) để truy cập các phần khác của CV -->
-<nav class="navbar">
-  <div class="navbar-spacer"></div> <!-- Để cân giữa menu -->
-  <ul class="navbar-menu">
-    <li><a href="#banner"><i class="fas fa-home"></i> Home</a></li>
-    <li><a href="#thongtin">Thông tin</a></li>
-    <li><a href="#nghenghiep">Nghề nghiệp</a></li>
-    <li><a href="#sothich">Sở thích</a></li>
-    <li><a href="#chungchigiaithuong">Chứng chỉ - Giải thưởng</a></li>
-    <li><a href="#kynang">Kỹ năng</a></li>
-    <li><a href="#duan">Dự án</a></li>
-    <li><a href="#lienhe">Liên hệ</a></li>
-  </ul>
-</nav>
-
-<!-- Phần thông tin cá nhân -->
-<section class="section" id="thongtin">
-  <div class="section-header">
-    <div class="icon-tieude"><i class="fas fa-user"></i></div>
-    <span class="tieude">THÔNG TIN</span>
-  </div>
-  <ul>
-    <li><i class="fas fa-id-card icon-name"></i> Họ và Tên: Trịnh Nguyễn Phi Hào</li>
-    <li><i class="fas fa-birthday-cake icon-birth"></i> Ngày sinh: 03/10/2005</li>
-    <li><i class="fas fa-map-marker-alt icon-address"></i>Địa chỉ: Tp. HCM</li>
-  </ul>
-</section>
-
-<!-- Phần nghề nghiệp hiện tại và định hướng tương lai -->
-<section class="section" id="nghenghiep">
-  <div class="section-header">
-    <div class="icon-tieude"><i class="fas fa-briefcase"></i></div>
-    <span class="tieude">NGHỀ NGHIỆP</span>
-  </div>
-  <ul>
-    <li><i class="fas fa-user-graduate icon-uni"></i> Sinh viên năm 2 trường Đại học Giao Thông Vận Tải TP.HCM</li>
-    <li><i class="fas fa-laptop-code icon-dev"></i> Hướng đến phát triển Front-end</li>
-  </ul>
-</section>
-
-<!-- Phần liệt kê các sở thích cá nhân -->
-<section class="section" id="sothich">
-  <div class="section-header">
-    <div class="icon-tieude"><i class="fas fa-gamepad"></i></div>
-    <span class="tieude">SỞ THÍCH</span>
-  </div>
-  <ul>
-    <li><i class="fas fa-futbol icon-sport"></i> Chơi thể thao</li>
-    <li><i class="fas fa-music icon-music"></i> Nghe nhạc</li>
-    <li><i class="fas fa-pencil-ruler icon-design"></i>Đi bar</li>
-  </ul>
-</section>
-
-<!-- Phần liệt kê các chứng chỉ hoặc giải thưởng đã đạt được -->
-<section class="section" id="chungchigiaithuong">
-  <div class="section-header">
-    <div class="icon-tieude"><i class="fas fa-graduation-cap"></i></div>
-    <span class="tieude">Chứng chỉ - giải thưởng</span>
-  </div>
-  <ul>
-    <li><i class="fas fa-times" style="color: red;"></i> Không có</li>
-  </ul>
-</section>
-
-<!-- Phần kỹ năng cá nhân với thanh tiến trình thể hiện mức độ thành thạo -->
-<section class="section" id="kynang">
-  <div class="section-header">
-    <div class="icon-tieude"><i class="fas fa-wrench"></i></div>
-    <span class="tieude">KỸ NĂNG</span>
-  </div>
-
-  <!-- Kỹ năng HTML / CSS -->
-  <div class="skill">
-    <span>HTML / CSS</span>
-    <div class="skill-bar"><div class="skill-level level-75"></div></div>
-  </div>
-
-  <!-- Kỹ năng JavaScript -->
-  <div class="skill">
-    <span>JavaScript</span>
-    <div class="skill-bar"><div class="skill-level level-65"></div></div>
-  </div>
-
-  <!-- Kỹ năng thiết kế với Figma -->
-  <div class="skill">
-    <span>Thiết kế Figma</span>
-    <div class="skill-bar"><div class="skill-level level-40"></div></div>
-  </div>
-
-  <!-- Kỹ năng làm việc nhóm -->
-  <div class="skill">
-    <span>Làm việc nhóm</span>
-    <div class="skill-bar"><div class="skill-level level-85"></div></div>
-  </div>
-</section>
-
-<!-- Phần các dự án cá nhân đã thực hiện -->
-<section class="section" id="duan">
-  <div class="section-header">
-    <div class="icon-tieude"><i class="fas fa-bolt"></i></div>
-    <span class="tieude">DỰ ÁN</span>
-  </div>
-  <ul>
-    <li><i class="fas fa-users icon-student"></i> Thiết kế Website Nha Khoa - HTML/CSS/JS</li>
-    <li><i class="fas fa-globe icon-landing"></i> Thiết kế Website Garage sửa xe oto - HTML/CSS/JS</li>
-  </ul>
-</section>
-
-<!-- Phần liên hệ ở cuối trang -->
-<footer id="lienhe">
-  <!-- Thông tin liên hệ -->
-  <p>📞 0388671314 | 0337024131</p>
-  <p>✉️ phihaokc2005@gmail.com</p>
-  <p>📍 Bình Tân, TP. Hồ Chí Minh</p>
-
-  <!-- Icon mạng xã hội lặp lại để dễ truy cập -->
-  <div class="icon-footer">
-    <a href="https://www.facebook.com/phihaokc2005?locale=vi_VN" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.tiktok.com/@trinhnguyenphihao" target="_blank"><i class="fab fa-tiktok"></i></a>
-  </div>
+    <!-- Switch theme -->
+    <div class="toggle-switch">
+        <input type="checkbox" id="switch" />
+        <label for="switch" class="switch-label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <span class="ball"></span>
+        </label>
+    </div>
+    <!-- Giới thiệu -->
+    <section id="about" class="section section-card fade-in">
+        <div class="section-title">
+            <i class="fa-solid fa-user"></i>
+            <h2>Giới thiệu</h2>
+            <div class="line"></div>
+        </div>
+        <p>
+            Tôi tên là Trịnh Nguyễn Phi Hào, sinh viên công nghệ thông tin yêu thích lập trình web hiện đại và các hiệu ứng mượt mà.
+        </p>
+    </section>
+    <!-- Mục tiêu nghề nghiệp -->
+    <section id="career" class="section section-card slide-in-left">
+        <div class="section-title">
+            <i class="fa-solid fa-bullseye"></i>
+            <h2>Mục tiêu nghề nghiệp</h2>
+            <div class="line"></div>
+        </div>
+        <p>
+            Mong muốn trở thành một lập trình viên front-end chuyên nghiệp, góp phần tạo ra các sản phẩm thân thiện người dùng và có tính thẩm mỹ cao.
+        </p>
+    </section>
+    <!-- Sở thích -->
+    <section id="hobbies" class="section section-card slide-in-right">
+        <div class="section-title">
+            <i class="fa-solid fa-palette"></i>
+            <h2>Sở thích</h2>
+            <div class="line"></div>
+        </div>
+        <div class="hobby-grid">
+          <div class="hobby-box"><i class="hobby-icon fa-solid fa-microchip"></i> Tìm hiểu công nghệ mới</div>
+          <div class="hobby-box"><i class="hobby-icon fa-solid fa-music"></i> Nghe nhạc</div>
+          <div class="hobby-box"><i class="hobby-icon fa-solid fa-book"></i> Đọc sách</div>
+          <div class="hobby-box"><i class="hobby-icon fa-solid fa-futbol"></i> Đá bóng</div>
+        </div>
+    </section>
+    <!-- Kỹ năng -->
+    <section id="skills" class="section section-card fade-in">
+        <div class="section-title">
+            <i class="fa-solid fa-code"></i>
+            <h2>Kỹ năng</h2>
+            <div class="line"></div>
+        </div>
+        <div class="skill">
+            <span>HTML/CSS</span>
+            <div class="progress">
+                <div class="progress-bar" data-percent="85%"></div>
+                <span class="percent">85%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <span>JavaScript</span>
+            <div class="progress">
+                <div class="progress-bar" data-percent="80%"></div>
+                <span class="percent">80%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <span>C++</span>
+            <div class="progress">
+                <div class="progress-bar" data-percent="85%"></div>
+                <span class="percent">85%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Python</span>
+            <div class="progress">
+                <div class="progress-bar" data-percent="80%"></div>
+                <span class="percent">80%</span>
+            </div>
+        </div>
+    </section>
+    <!-- Chứng chỉ -->
+    <section id="certificates" class="section section-card fade-in">
+        <div class="section-title">
+            <i class="fa-solid fa-award"></i>
+            <h2>Chứng chỉ - Giải thưởng</h2>
+            <div class="line"></div>
+        </div>
+        <p>Không có</p>
+    </section>
+    <!-- Dự án -->
+    <section id="projects" class="section section-card slide-in-left">
+        <div class="section-title">
+            <i class="fa-solid fa-briefcase"></i>
+            <h2>Dự án</h2>
+            <div class="line"></div>
+        </div>
+        <div class="project-list">
+            <div class="project-card">
+                <h3>CV Website</h3>
+                <p>Trang CV cá nhân động, dùng HTML/CSS/JS có hiệu ứng particles và animation scroll.</p>
+            </div>
+            <div class="project-card">
+                <h3>Tạo Website Phòng Khám Nha Khoa</h3>
+                <p>Giao diện giới thiệu về nha khoa đặt lịch khám bán sản phẩm...</p>
+            </div>
+            <div class="project-card">
+                <h3>Dự án Đang làm Garage ôtô</h3>
+                <p>Giao diện Đặt lịch rửa xe, sửa xe...</p>
+            </div>
+        </div>
+    </section>
+    <!-- Liên hệ -->
+    <section id="contact" class="section section-card zoom-in">
+        <div class="section-title">
+            <i class="fa-solid fa-phone"></i>
+            <h2>Liên hệ</h2>
+            <div class="line"></div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/phihaokc2005" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://github.com/phihao11" class="github"><i class="fab fa-github"></i></a>
+            <a href="https://www.tiktok.com/@trinhnguyenphihao" class="tiktok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/tnp_hao0310/" class="instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+</div>
+<footer>
+    <p>© 2025 Trịnh Nguyễn Phi Hào. All rights reserved.</p>
 </footer>
+<div id="editPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" id="cancelBtn">&times;</span>
+      <h2>Chỉnh sửa CV</h2>
+
+      <label>Đổi ảnh đại diện:</label>
+      <input type="file" id="avatarFile" accept="image/*">
+
+      <label>Họ tên:</label>
+      <input type="text" id="nameInput">
+
+      <label>Facebook:</label>
+      <input type="text" id="facebookInput">
+
+      <label>GitHub:</label>
+      <input type="text" id="githubInput">
+
+      <label>TikTok:</label>
+      <input type="text" id="tiktokInput">
+
+      <label>Instagram:</label>
+      <input type="text" id="instagramInput">
+
+      <label>Số điện thoại:</label>
+      <input type="text" id="phoneInput">
+
+      <label>Ngày sinh:</label>
+      <input type="text" id="birthdayInput">
+
+      <label>Địa chỉ:</label>
+      <input type="text" id="addressInput">
+
+      <label>Giới thiệu:</label>
+      <textarea id="aboutInput"></textarea>
+
+      <label>Mục tiêu nghề nghiệp:</label>
+      <textarea id="careerInput"></textarea>
+
+      <label>Sở thích (cách nhau bằng dấu phẩy):</label>
+      <input type="text" id="hobbyInput">
+
+      <label>Kỹ năng (Ví dụ: HTML : 90, CSS : 85):</label>
+      <input type="text" id="skillInput">
+
+      <label>Dự án (mỗi dòng: Tên: Mô tả):</label>
+      <textarea id="projectInput"></textarea>
+
+      <label>Chứng chỉ:</label>
+      <textarea id="certInput"></textarea>
+
+      <button id="saveBtn">Lưu</button>
+    </div>
+</div>
+
+  <div id="saveMessage" class="save-message">Đã lưu thành công!</div>
 </body>
 </html>
