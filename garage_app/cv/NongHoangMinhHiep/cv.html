@@ -1,146 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang chủ của Hiệp</title>
-  <link rel="stylesheet" href="css/cv.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="description" content="CV cá nhân của Nông Hoàng Minh Hiệp, lập trình viên web tập sự, sinh viên Công nghệ thông tin tại Đại học Giao Thông Vận Tải HCM, chuyên về HTML, CSS, JavaScript.">
+  <meta property="og:title" content="CV - Nông Hoàng Minh Hiệp">
+  <meta property="og:description" content="Khám phá CV của Nông Hoàng Minh Hiệp, lập trình viên web tập sự với đam mê xây dựng ứng dụng hiện đại.">
+  <meta property="og:image" content="images/avatar.jpg">
+  <meta property="og:url" content="https://your-website-url">
+  <title>CV - Nông Hoàng Minh Hiệp</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/cv.css">
 </head>
 <body>
-  
+  <canvas id="bg-canvas"></canvas>
   <div class="navbar">
-    <div class="header">Lập trình viên</div>
-  <div class="nav">
-    <ul>
-    <li><a href="#tt-cn">Thông tin cá nhân </a></li>
-    <li><a href="#tt-nn">Thông tin nghề nghiệp</a></li>
-    <li><a href="#So-thich">Sở thích</a></li>
-    <li><a href="#nn-kn">Ngôn Ngữ - Kỹ năng</a></li>
-    <li><a href="#cc-da">Chứng chỉ giải thưởng - Dự án</a></li>
-    
-    </ul>    
+    <div class="header">Lập Trình Viên <i class="fa-solid fa-code pendulum-icon"></i></div>
+    <div class="nav">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="#tt-cn">Thông tin cá nhân</a></li>
+        <li><a href="#tt-nn">Mục tiêu nghề nghiệp</a></li>
+        <li><a href="#So-thich">Sở thích</a></li>
+        <li><a href="#nn-kn">Ngôn ngữ - Kỹ năng</a></li>
+        <li><a href="#cc-da">Chứng chỉ - Dự án</a></li>
+      </ul>
+    </div>
   </div>
-  </div>
-  <div class="container-main">
-    <div class="banner">
+
+  <div class="banner">
     <div class="profile-img">
-      <img src="images/avatar.jpg" alt="Profile Picture">
+      <img src="./images/avatar.jpg" alt="Ảnh đại diện của Nông Hoàng Minh Hiệp, sinh viên Công nghệ thông tin" onerror="this.src='https://via.placeholder.com/150';" loading="lazy">
     </div>
     <div class="content">
-    <h1>Xin chào</h1>
-    <div class="about">
-      Tôi tên là Nông Hoàng Minh Hiệp <br>
-      Tôi là một lập trình viên web tập sự "Nói lập trình viên cho ngầu chứ tôi là một sinh viên năm 2 tại trường đại học Giao Thông Vận Tải HCM đang học web được 30-40% gì đó". <br>
-    <div class="button">
-      <h2>Liên hệ</h2>
-      <a href="https://github.com/minhiep16" class="btn Githud"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.facebook.com/minh.hiep.127064?locale=vi_VN" class="btn projects"><i class="fa-brands fa-facebook"></i></a>
-      
-    </div>
-  </div>
-  </div>
-  </div>
-  <div class="content">
-  <section class="tt-cn" id ="tt-cn">
-    <h2>Thông tin cá nhân</h2>
-    <!-- <div class="item">
-      <p><i class="fa-solid fa-user-tie"></i>Nam</P>
-      <p><i class="fa-solid fa-phone"></i>0878036796</P>
-      <p><i class="fa-solid fa-envelope"></i>nonghoangminhiep16082005@gmail.com</P>
-      <p><i class="fa-solid fa-calendar-days"></i>16/08/2005</P>
-    </div> -->
-    <div class="nd-tt">
-    <div class="box1">
-      <p><strong>MSSV</strong>:075205024842</p>
-      <p><strong>Họ và tên</strong>: Nông Hoàng Minh Hiệp</p>
-      <p><strong>Khóa học</strong>:2023</p>
-      <p><strong>Ngày sinh</strong>:16/08/2005</p>
-      <p><strong>Nơi sinh</strong>:Đồng Nai</p>
-    </div>
-    <div class="box2">
-      <p><strong>Bậc đào tạo</strong>:Đại học - chính quy</p>
-      <p><strong>Loại hình đào tạo</strong>:075205024842</p>
-      <p><strong>Khoa</strong>:Viện Công nghệ thông tin và Điện, điện tử</p>
-      <p><strong>Ngành</strong>:Công nghệ thông tin</p>
-      <p><strong>Chuyên ngành</strong>:Công nghệ thông tin</p>
-    </div>
-    </div>
-  </section>
-  <!-- tt-nn là thông tin ghề nghiệp  -->
-  <section class="tt-nn" id ="tt-nn">
-    <h2>Mục tiêu ghề nghiệp</h2>
-    <P>Tôi mong muốn trở thành một lập trình viên web chuyên nghiệp, có khả năng xây dựng các trang web hiện đại, tối ưu trải nghiệm người dùng và đáp ứng tốt trên mọi thiết bị.Tôi luôn sẵn sàng học hỏi công nghệ mới, cải thiện kỹ năng lập trình front-end và back-end để đóng góp vào sự phát triển của doanh nghiệp.</P>
-  </section>
-  <section class="So-thich" id="So-thich">
-    <div class="Sothich-header">
-      <h2>Sở thích</h2>    
-    </div>
-    <div class="Sothich-list">
-      <div class="hobby-item">
-        <i class="fa-solid fa-film"></i>
-        <p>Xem phim</p>
+         <h1><span id="typing-text"></span></h1>
+      <div class="about">
+       
+        Tôi là một lập trình viên web tập sự, hiện là sinh viên năm 2 tại Đại học Giao Thông Vận Tải HCM, đang học lập trình web và đam mê xây dựng các ứng dụng hiện đại.
       </div>
-      <div class="hobby-item">
-        <i class="fa-solid fa-volleyball"></i>
-        <p>Thể thao</p>
-      </div>
-      <div class="hobby-item">
-        <i class="fa-solid fa-utensils"></i>
-        <p>Nấu ăn</p>
+      <div class="button">
+        <h2>Liên hệ</h2>
+        <a href="https://github.com/minhiep16" class="btn Github" aria-label="Xem GitHub của Minh Hiệp"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.facebook.com/minh.hiep.127064?locale=vi_VN" class="btn projects" aria-label="Xem Facebook của Minh Hiệp"><i class="fa-brands fa-facebook"></i></a>
+       
       </div>
     </div>
-  </section>
-   <!-- nn-kn ngôn ngữ kinh nghiệm  -->
+  </div>
+
+  <div class="container-main">
+  <div class="ground-section">
+    
+    <section class="tt-nn" id="tt-nn">
+      <h2>Mục tiêu nghề nghiệp</h2>
+      <div class="line"></div>
+      <p>Tôi mong muốn trở thành một lập trình viên web chuyên nghiệp, có khả năng xây dựng các trang web hiện đại, tối ưu trải nghiệm người dùng và đáp ứng tốt trên mọi thiết bị. Tôi luôn sẵn sàng học hỏi công nghệ mới, cải thiện kỹ năng front-end và back-end để đóng góp vào sự phát triển của doanh nghiệp.</p>
+    </section>
+    <section class="tt-cn" id="tt-cn">
+      <h2>Thông tin cá nhân</h2>
+      <div class="line"></div>
+      <div class="nd-tt">
+        <div class="box1">
+          <p><strong>MSSV</strong>: 075205024842</p>
+          <p><strong>Họ và tên</strong>: Nông Hoàng Minh Hiệp</p>
+          <p><strong>Khóa học</strong>: 2023</p>
+          <p><strong>Ngày sinh</strong>: 16/08/2005</p>
+          <p><strong>Nơi sinh</strong>: Đồng Nai</p>
+        </div>
+        <div class="box2">
+          <p><strong>Bậc đào tạo</strong>: Đại học - chính quy</p>
+          <p><strong>Loại hình đào tạo</strong>: Chính quy</p>
+          <p><strong>Khoa</strong>: Viện Công nghệ thông tin và Điện, điện tử</p>
+          <p><strong>Ngành</strong>: Công nghệ thông tin</p>
+          <p><strong>Chuyên ngành</strong>: Công nghệ thông tin</p>
+        </div>
+      </div>
+    </section>
+
+    
+    </div>
+    <!-- <section class="So-thich" id="So-thich">
+      <h2>Sở thích</h2>
+      <div class="line"></div>
+      <div class="Sothich-list">
+        <div class="hobby-item">
+          <i class="fa-solid fa-film"></i>
+          <p>Xem phim</p>
+        </div>
+        <div class="hobby-item">
+          <i class="fa-solid fa-volleyball"></i>
+          <p>Thể thao</p>
+        </div>
+        <div class="hobby-item">
+          <i class="fa-solid fa-utensils"></i>
+          <p>Nấu ăn</p>
+        </div>
+      </div>
+    </section> -->
+    <section class="hobbies-section">
+        <h2>Sở Thích Của Tôi</h2>
+        <div class="hobbies-container">
+            <div class="hobby-card">
+                <img src="./images/thethao..jpg" alt="Đọc sách">
+                <h3>Thể thao</h3>
+                <p>Tôi thích chơi nhiều môn thể thao , nó giúp tôi khỏe mạnh và luôn happy</p>
+            </div>
+            <div class="hobby-card">
+                <img src="./images/nau-an.jpg" alt="Du lịch">
+                <h3>Nấu ăn</h3>
+                <p>Tôi thích chế biến các món ăn ngon và đặc biệt nhưng rất là giản dị</p>
+            </div>
+            <div class="hobby-card">
+                <img src="./images/tu-duy.jpg" alt="Chụp ảnh">
+                <h3>Chơi game</h3>
+                <p>Ghi lại những khoảnh khắc đẹp của cuộc sống qua ống kính máy ảnh.</p>
+            </div>
+           
+        </div>
+    </section>
+
     <section class="nn-kn" id="nn-kn">
-      <h2>Ngôn ngữ - kỹ năng</h2>
-      
+      <h2>Ngôn ngữ - Kỹ năng</h2>
+      <div class="line"></div>
       <div class="group-item">
-        
-      <div class="item1">
-        <p><i class="fa-brands fa-css3-alt"></i>CSS</p>
-        <div class="nn"></div>
-        <div class="kn"></div>
+        <div class="item1" data-width="70%">
+          <p><i class="fa-brands fa-css3-alt"></i> CSS</p>
+          <div class="nn"><div class="kn"></div></div>
+        </div><br>
+        <div class="item2" data-width="80%">
+          <p><i class="fa-brands fa-html5"></i> HTML</p>
+          <div class="nn"><div class="kn"></div></div>
+        </div><br>
+        <div class="item3" data-width="60%">
+          <p><i class="fa-solid fa-code"></i> C++</p>
+          <div class="nn"><div class="kn"></div></div>
+        </div><br>
+        <div class="item4" data-width="50%">
+          <p><i class="fa-brands fa-js"></i> JavaScript</p>
+          <div class="nn"><div class="kn"></div></div>
+        </div><br>
       </div>
-      <div class="item2">
-        <p><i class="fa-brands fa-html5"></i>HTML</p>
-        <div class="nn"></div>
-        <div class="kn"></div>
-      </div>
-      <div class="item3">
-        <p>C++</p>
-        <div class="nn"></div>
-        <div class="kn"></div>
-      </div>
-      <div class="item4">
-        <p><i class="fa-brands fa-js"></i>Javascipts</p>
-        <div class="nn"></div>
-        <div class="kn"></div>
-      </div>
-      </div>
-      
     </section>
-    <!-- cc-da là chứng chỉ dự án -->
-    <section class="cc-da" id="cc-da">
-      <h2>Chứng chỉ giải thưởng</h2>
-      <p>Không</p>
+    <div class="group-cc-da">
+    <section class="cc" id="cc-da">
+      <h2>Chứng chỉ</h2>
+      <div class="line"></div>
+      <img src="./images/tin-hoc.jpg">
+      <ul>
+        <li>Tin học cơ bản</li>
+        <li>Quân sự</li>
+      </ul>
+      </section>
+      <section class="da" id="cc-da">
       <h2>Dự án</h2>
-      <P>-Tôi đã tham gia vào một dự án có tên đề tài là xây dựng trang web phòng khám nha khoa gồm 7 thành viên thamg gia.</P>
-      <p>Dưới đây là link git dự án của tôi <br><a href="https://github.com/DangPhatDat/CNPM_Nhom_6"><i class="fa-solid fa-file"></i></a></p>
-     
+      <div class="line"></div>
+      <img src="./images/nhakhoa.jpg">
+      <p>- Tham gia dự án xây dựng trang web phòng khám nha khoa (nhóm 7 thành viên).<br>
+      - <a href="https://github.com/DangPhatDat/CNPM_Nhom_6" class="project-link">Xem chi tiết</a> | <i class="fa-brands fa-github"></i>
     </section>
+    </div>
+  </div>
+  <div class="modal" id="project-modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-content">
+      <p>Tham gia nhóm 7 thành viên để xây dựng trang web quản lý phòng khám nha khoa, bao gồm giao diện người dùng và chức năng đặt lịch hẹn.</p>
     </div>
   </div>
   <div class="footer">
     <div class="phone">
-      <h2>Phone</h2>
+      <h2><i class="fa-solid fa-phone"></i> Phone</h2>
       <p>0878036796</p>
     </div>
     <div class="Email">
-      <h2>Email</h2>
+      <h2><i class="fa-solid fa-envelope"></i> Email</h2>
       <p>hiepnhm4842@ut.edu.vn</p>
     </div>
-   
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="./js/cv.js"></script>
 </body>
 </html>
